@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/ListaFaculdades.css">
+    <link rel="stylesheet" href="../../public/css/formDisciplina.css">
+    <script type="module" src="../../public/js/DisciplinaForm.js"></script>
+    <title>Formulario | Faculdade</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img class="logo" src="../../public/img/upm.png">
+        </div>
+
+        <div class="sidebar-buttons-container">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./FaculdadeForm.html">Faculdades</a></li>
+            <li><a href="./CursoForm.html">Cursos</a></li>
+            <li><a href="TutorForm.html">Tutores</a></li>
+            <li><a href="./TutoriaForm.html">Tutorias</a></li>
+            <li><a href="./DisciplinaForm.html">Disciplina</a></li>
+            <li><a href="#">Testes</a></li>
+            <li><a href="#">Relatorios</a></li>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <header>
+            <img src="../../public/img/hamburger-menu.png" alt="">
+            <div class="user-info-container">
+                <img class="user-img" src="../../public/img/user.png" alt="">
+                <p>João Mateus</p>
+            </div>
+        </header>
+        
+        <main>
+            <div class="main-title-container">
+                <h1>Cadastrar Disciplina</h1>
+            </div>
+
+            <form action="/sige_tutorias/faculdade/registar" method="post" class="main-content">
+                <div class="field-components-container">
+                    <span class="field_title">Nome da Disciplina:</span>
+                    <input class="" name="nome_disciplina" type="text" required>
+                </div>
+                <div class="field-components-container">
+                    <select name="id_faculdade" id="" class="js-">
+                        <option value="">Escolher Faculdade</option>
+                        <option value="1">Faculdade de Engenharias e Tecnologias</option>
+                        <option value="2">Faculdade de Ciências Naturais e Matemática</option>
+                    </select>
+                </div>
+                <div class="field-components-container choose-docente-container">
+                    <span class="field_title">Nome do Docente:</span>
+                    
+                    <div class="left-choose-docente-components">
+                        <input type="hidden" class="hidden-input" name="id_docente" type="text" required>
+                        <input class="docente-name-input" name="nome" type="text" required>
+                        <button type="button" class="choose-docente-button js-choose-docente-button">Selecionar</button>
+                    </div>
+                </div>
+                <button class="submit-button" type="submit">Cadastrar</button>
+            </form>
+        </main>
+    </div>
+
+    <div style="display: none;" class="pop-up js-pop-up">
+        <section>
+            <button class="quit-pop-up-button js-quit-pop-up-button">X</button>
+
+            <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                <tr>
+                    <th style="display: none;">id</th>
+                    <th>Nome do Tutor</th>
+                    <th>Disciplina</th>
+                    <th>Faculdade</th>
+                </tr>
+                </thead>
+            </table>
+            </div>
+            <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody class="js-table-body-disciplinas">
+                    <!-- Conteudo gerado em CursoLista.js -->
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<!-- Ohh chat, estou a ter um outro problema, quando fecho uma janela html que lista alguns elementos, cujo container tem a mesma classe que todas outra janelas que fazem listagem de alguma coisa, quando fecho essa janela e vou para uma outra que faz o uso da  mesma tabela(com mesma class, mas elementos diferentes) a tabela imprime o conteudo da janela que fooi fechada, mesmo eu nao chamando a funcao de actualizar conteudo da pagina. Tentei limpar o cache e nao aceitou, so funciona quando mudo o nome da classe,  o que nao e desjavel -->

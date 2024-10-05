@@ -1,0 +1,183 @@
+/*https://coolors.co/d4ddfc-000000-0582ca-e4d6a7*/
+
+*{
+    margin: 0; padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: #02010a;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    max-width: 1440px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #02010a;
+    background-color: #d4ddfc;
+}
+
+header{
+    padding: .2em 1em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: #0084ff;*/
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    margin: 6px;
+}
+header nav ul li a{
+    color: #000;
+    font-weight: bold;
+}
+
+
+.lg{
+    display: grid;
+    grid-template-areas: "figure form";
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lg form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.lg form figure{
+    max-width: 400px;
+}
+.lg form input, .lg form select, .lg form textarea{
+    display: block;
+    width: 350px;
+    margin: .3em;
+    padding: .6em 1em;
+    font-size: 15px;
+}
+.lg form fieldset{
+    border: none;
+    outline: none;
+}
+.lg form #datas{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+.lg form #datas input{
+    width: 140px;
+    margin: .4em;
+    padding: .3em .6em;
+}
+
+.lg form button{
+    padding: .6em .9em;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-areas: "aside section";
+    grid-template-columns: 16% 84%;
+    height: 87vh;
+    overflow: hidden;
+}
+aside{
+    background-color: #e4d6a7;
+    margin: .6em .4em;
+    padding: .4em;
+    border-radius: .8em;
+    box-shadow: 0 0 6px 1px #8a8a8a;
+}
+aside ul {
+    padding: 4px;
+}
+aside ul li{
+    margin: 2px;
+    padding: .4em;
+}
+aside ul li:hover{
+    background-color: #aaa180f1;
+    border-radius: 1em;
+}
+aside ul li a{
+    display: flex;
+    align-items: center;
+}
+aside ul li img{
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+}
+aside ul li:hover > img{
+    background-color: #fff;
+}
+.show{
+    background-color: #f1f1f1;
+    margin: .6em .4em;
+    padding: .8em;
+    border-radius: .8em;
+}
+
+
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 0 2em;
+    padding: 1em;
+}
+
+.sectionHeader button {
+    background-color: #008cff;
+    color: #ffffff;
+    border: none;
+    font-weight: bolder;
+    padding: .8em 1.8em;
+}
+
+table{
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    text-align: left;
+    padding: 9px;
+}
+.formTable {
+    display: flex;
+    justify-content: space-between;
+}
+.formTable form {
+    margin: 0 0 .3em 0;
+    padding: 0 .3em .7em .3em;
+}
+.formTable form select, .formTable form button, .formTable form input {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    padding: .6em .8em;
+    border-radius: .4em;
+    box-shadow: 0px 0px 3px #777777;
+}

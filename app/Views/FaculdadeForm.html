@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/formFaculdade.css">
+    <title>Formulario | Faculdade</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img class="logo" src="../../public/img/upm.png">
+        </div>
+
+        <div class="sidebar-buttons-container">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./FaculdadeForm.html">Faculdades</a></li>
+            <li><a href="./CursoForm.html">Cursos</a></li>
+            <li><a href="TutorForm.html">Tutores</a></li>
+            <li><a href="./TutoriaForm.html">Tutorias</a></li>
+            <li><a href="#">Testes</a></li>
+            <li><a href="#">Relatorios</a></li>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <header>
+            <img src="../../public/img/hamburger-menu.png" alt="">
+            <div class="user-info-container">
+                <img class="user-img" src="../../public/img/user.png" alt="">
+                <p>João Mateus</p>
+            </div>
+        </header>
+        
+        <main>
+            <div class="main-title-container">
+                <h1>Cadastrar Faculdade</h1>
+            </div>
+
+            <form action="/sige_tutorias/faculdade/registar" method="post" class="main-content">
+                <div class="field-components-container">
+                    <span class="field_title">Nome da Faculdade:</span>
+                    <input class="" name="nome_faculdade" type="text" required>
+                </div>
+                <div class="field-components-container">
+                    <span class="field_title">Localização:</span>
+                    <input class="" name="endereco" type="text" required>
+                </div>
+                <div class="field-components-container">
+                    <span class="field_title">Descrição:</span>
+                    <textarea name="descricao_facul" id=""></textarea>
+                </div>
+                <button class="submit-button" type="submit">Cadastrar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
